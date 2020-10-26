@@ -1,0 +1,227 @@
+
+/* Header */
+
+.index_intro{
+    margin: 0;
+    background-image: url("../img/intro_back.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    max-width: 100%;
+    min-height: 100vh;
+} 
+
+.index_intro_container{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    color: white;
+    margin-top: 10%;
+}
+
+h1{
+    text-align: right;
+    margin-right: 70px;
+    font-size: 5em;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.pre{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 15%;
+    margin-right: 30px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+
+/*navigation*/
+
+.navigation{
+    padding-top: 50px;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.navigation ul,
+.navigation ol{
+    list-style: none;
+}
+
+.navigation > ul{
+    display: flex;
+    justify-content: center;
+}
+    
+
+.nav_link{
+    display: block;
+    margin: 0 20px;
+    position: relative;
+    min-width: 170px;
+
+    color: white;
+    text-decoration: none;
+
+    transition: color .2s linear;
+}
+
+.nav_link:after{
+    content:"";
+    display: block;
+    width: 100%;
+    height: 3px;
+    display: none;
+
+    background-color:#fce38a;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.nav_link:hover{
+    color: #fce38a
+}
+
+.nav_link:hover:after{
+    display: block;
+}
+
+/* Sub menu */
+
+.nav_sub{
+    display: block;
+    background: #e4e4e5;
+    font-size: large;
+    color: black;
+    width: 170px;
+
+    text-decoration: none;
+    text-align: center;
+
+    transition: color .2s linear;
+}
+
+.nav_sub:hover{
+    background-color: #454547;
+    color: white;
+}
+
+.navigation li ul{
+    position: absolute;
+    display: none;
+}
+.navigation li > ul li a{
+    background: #e4e4e5;
+}
+.navigation li > ul li ul{
+    position: absolute;
+    min-width: 230px;
+    left: 50px;
+    top: 100%;
+}
+
+.navigation li:hover > ul{
+    display: block;
+}
+
+
+/* Body */
+
+body{
+    width: 100%;
+    margin: 0;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.main {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.cook_at_home_header{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.cook_at_home_header h2{
+    font-size: 3em;
+}
+
+.cook_at_home_header img{
+    max-width: 100%;
+    height: auto;
+}
+
+.index_main {
+    text-align: left;
+    font-size: x-large;
+}
+.index_main ul{
+    list-style: none;
+}
+
+
+summary::-webkit-details-marker{
+    display: none;
+}
+summary:after{
+    background: #4d5250; 
+  border-radius: 5px; 
+  content: "+"; 
+  color: #fff; 
+  float: left; 
+  font-size: 1.3em; 
+  margin: -5px 10px 0 0; 
+  padding: 0; 
+  text-align: center; 
+  width: 20px;
+}
+details[open] summary:after{
+    content: "-";
+}
+details {
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .4);
+    color: #363636;
+    margin: 0 0 .4em;
+    padding: 1%;
+}
+
+
+
+
+
+/* Aside area */
+
+.aside{
+    text-align: center;
+    text-decoration: underline;
+    float: right;
+    background-color: #454547;
+    color: white;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+
+
+
+
+/* Video area */
+
+.video_sec{
+    text-align: center;
+}

@@ -1,0 +1,101 @@
+/* header */
+
+.intro{
+    background-image: url(../img/intro_back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 50vh;
+}
+
+.intro section{
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    margin-top: 3%;
+    color: white;
+}
+
+.intro h1{
+    font-size: 3em;
+    margin-right: 30px;
+    margin-top: 0;
+    line-height: 90px;
+}
+
+.intro p{
+    margin-top: 5%;
+    margin-right: 30px;
+}
+
+.link_back_to_home{
+    text-decoration: underline;
+    color: white;
+    font-size: large;
+}
+
+.link_back_to_home:hover{
+    color: #fce38a;
+}
+
+.link_back_to_home:active {
+    color: aliceblue;
+}
+
+/* Subscription area */
+
+.bottom_sub_field {
+    margin-top: 50px;
+
+    color: white;
+    font-size: x-large;
+    
+    background-color: #454547;
+    padding: 5px;
+}
+
+.bottom_sub_field p {
+    margin-left: 5%;
+}
+
+
+
+/* Body */
+
+body{
+    width: 100%;
+    margin: 0;
+    font-family: 'Kaushan Script', cursive;
+}
+
+
+
+/* Footer */
+
+footer form, p{
+    margin-left: 5%;
+}
+
+.form_field_label {
+    display: inline-block;
+    width: 150px;
+}
+
+.form_field {
+    padding: 0;
+    margin-top: 5px;
+}
+
+.search_field {
+    font-size: 20px;
+    padding: 1px;
+}
+
+.form {
+    font-family: serif;
+}

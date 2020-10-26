@@ -1,0 +1,101 @@
+/* body */
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2em;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.main {
+    margin-left: 50px;
+}
+
+/* both forms */
+
+.sub_form_p {
+    margin-left: 50px;
+    padding-left: 50px;
+}
+
+@media screen {
+    #sub_join_us {
+        text-transform: uppercase;
+        font-size: 3em;
+        font-family: 'Kaushan Script', cursive;
+    }
+}
+
+@media print {
+    #sub_join_us {
+        text-transform: uppercase;
+        font-size: 36pt;
+        font-family: 'Kaushan Script', cursive;
+    }
+}
+
+
+ul.sub_form {
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+}
+
+label.sub_form {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+
+input.sub_from:focus {
+    background-color: azure;
+}
+
+label.sub_from_hint {
+    font-size: 12px;
+    color: darkgray;
+}
+
+label.sub_about_yourself {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    padding-bottom: 15px;
+}
+
+label.sub_accept_terms {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    font-size: smaller;
+}
+
+a.sub_accept_terms {
+    color: lightskyblue;
+    font-family: serif;
+}
+
+label.sub_form_clear {
+    margin-left: 130px;
+    padding: 0;
+    margin-top: 5px;
+}
+
+input.sub_form_clear {
+    font-size: 20px;
+    padding: 1px;
+}
+
+label.sub_form_next {
+    margin-left: 7px;
+    padding: 0;
+    margin-top: 5px;
+}
+
+input.sub_form_next {
+    font-size: 20px;
+    padding: 1px;
+}
+
+#input.terms_checkbox:checked {
+    border: 3px red solid;
+}
