@@ -51,12 +51,17 @@
 
 .bottom_sub_field {
     margin-top: 50px;
+    margin-left: 3%;
+    width: 94%;
 
     color: white;
     font-size: x-large;
     
-    background-color: #454547;
+    /*background-color: #454547;*/
     padding: 5px;
+
+    border-radius: 0 0 50px 50px;
+    background: linear-gradient(70deg, #454547, white);
 }
 
 .bottom_sub_field p {
@@ -77,6 +82,11 @@ body{
 
 /* Footer */
 
+footer{
+    width: 100%;
+    float: left;
+}
+
 footer form, p{
     margin-left: 5%;
 }
@@ -94,6 +104,12 @@ footer form, p{
 .search_field {
     font-size: 20px;
     padding: 1px;
+    color: white;
+
+    background: radial-gradient(#454547 45%, white);
+    border-width: 1px;
+    border-radius: 10px 10px 10px 10px;
+    border-color: #454547;
 }
 
 .form {

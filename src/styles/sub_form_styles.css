@@ -7,14 +7,17 @@ h1 {
 }
 
 .main {
-    margin-left: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /* both forms */
 
-.sub_form_p {
-    margin-left: 50px;
-    padding-left: 50px;
+.sub_left {
+    padding-left: 15px;
+    float: left;
+    width: 60%;
+    min-width: 500px;
 }
 
 @media screen {
@@ -98,4 +101,64 @@ input.sub_form_next {
 
 #input.terms_checkbox:checked {
     border: 3px red solid;
+}
+
+/* sub form bottom */
+
+div.sub_bottom {
+    float: left;
+    padding-top: 40px;
+    width: 90%;
+}
+
+.photo_cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.photo {
+    width: 230px;
+    height: auto;
+    padding: 10px;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.photo:hover {
+    width: 250px;
+    height: auto;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+@media (max-width: 700px) {
+    .photo_cont {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+}
+
+
+/* sub form right */
+
+div.sub_right_photo {
+    float: left;
+    margin-top: 100px;
+    width: 400px;
+    height: 200px;
+    -webkit-transition: background-image 3s ease-in-out;
+    -o-transition: background-image 3s ease-in-out;
+    transition: background-image 3s ease-in-out;
+    background-image:url("../img/sub_right_1.jpg");
+}
+
+div.sub_right_photo:hover {
+    background-image:url("../img/sub_right_2.jpg");
 }

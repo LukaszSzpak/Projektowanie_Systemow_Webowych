@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
 h1 {
     text-transform: uppercase;
     font-size: 2em;
@@ -12,7 +14,39 @@ h3 {
     margin-left: 50px;
 }
 
+/* terms */
+
+div.terms {
+    column-count: 2;
+    column-gap: 20px;
+    column-rule-color: black;
+    column-rule-style: dotted;
+    column-rule-width: 1px;
+    padding: 5px;
+}
+
+p.terms {
+    font-family: 'Itim', cursive;
+    font-size: 18px;
+}
+
 /* form */
+
+@keyframes h1_ani {
+    from {color: floralwhite}
+    to {color: black}
+
+}
+
+h1.title {
+    animation-name: h1_ani;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+div.form {
+    width: 500px;
+}
 
 label.button {
     margin-left: 2px;
