@@ -115,3 +115,8 @@ footer form, p{
 .form {
     font-family: serif;
 }
+
+div.div_footer {
+    float: left;
+    width: 50%;
+}

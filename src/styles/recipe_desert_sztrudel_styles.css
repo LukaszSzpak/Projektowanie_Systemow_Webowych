@@ -28,7 +28,7 @@ body{
     right: 0;
     height: auto;
     margin-top: 3%;
-    color: white;
+    color: hsl(0, 0%, 100%);
 }
 
 .intro h1{

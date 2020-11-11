@@ -6,20 +6,28 @@
     <meta name="keywords" content="Cook, well, cooking, easy, healthy, zdrowe, odżywianie">
     <link rel="stylesheet" href="styles/common_styles.css">
     <link rel="stylesheet" href="styles/terms_style.css">
+
     <title>Regulamin</title>
+
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
 </head>
 
 <body>
 
-    <header class="intro">
-        <section>
-            <h1>COOK HEALTHY!<br> COOK EASY!</h1>
-            <p>
-                <a href="index.html" class="link_back_to_home">
-                    &#8612; Powrót do strony głównej</a>
-            </p>
-        </section>
-    </header>
+<!-- header section -->
+<div id="header"></div>
+
+<!-- page section -->
 
     <div class="main">
         <p><h1>
@@ -59,20 +67,8 @@
 
     </div>
 
-    <footer>
-        <hr>
-        <form class="form" action="index.html">
-            <label class="form_field_label"> Wyszukaj: </label>
-            <label>
-                <input type="search" name="search" placeholder="deser">
-            </label>
-            <label class="form_field">
-                <input class="search_field" type="submit" value="Szukaj !">
-            </label>
-        </form>
-        <p>
-            <small>Wszystkie prawa zastrzeżone &#169; &#8222;Kwestia smaku&#8221;</small>
-        </p>
-    </footer>
+<!-- footer section -->
+    <div id="footer"></div>
+
 </body>
 </html>
