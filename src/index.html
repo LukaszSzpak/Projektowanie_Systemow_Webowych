@@ -10,10 +10,13 @@
 
     <title>Healthy cook</title>
 
+    <script src="scripts/z1.js" defer></script>
+    <script src="scripts/z2.js"></script>
+    <script src="scripts/z3.js" defer></script>
     <script src="scripts/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-    </script>
+        </script>
     <script>
         $(function () {
             $("#footer").load("footer.html");
@@ -52,7 +55,7 @@
                     </ul>
                 </li>
                 <li><a class="nav_link" href="subscription.html">Rejestracja</a></li>
-                <li><a class="nav_link" href="terms.html">Regulamin</a></li>
+                <li><a class="nav_link" href="terms.html" onclick="getURL()">Regulamin</a></li>
 
             </ul>
 
@@ -61,13 +64,51 @@
 
     <!-- page section -->
 
+    <div class="colorPanel">
+        <div id="blue" data-color="#b3e5fc" onclick="changeColor('blue')"></div>
+        <div id="pink" data-color="#ffcdd2" onclick="changeColor('pink')"></div>
+        <div id="white" data-color="#ffffff" onclick="changeColor('white')"></div>
+    </div>
+
+    <div class="textPanel">
+        <div id="t1" onclick="changeTextStyle('t1')">T1</div>
+        <div id="t2" onclick="changeTextStyle('t2')">T2</div>
+    </div>
+
     <p id="user_name"></p>
+
+<p>
+    <ul id="mood_list"><li>Happy</li>
+        <li id="sad">Sad</li>
+        <li>Bored</li></ul>
+
+    <p> Click the button to add more happy word
+        <button onclick="addHappy()" id="happy_button">Try!</button>
+    </p>
+
+    <p> Click the button to replace sad word
+        <button onclick="replaceSad()" id="sad_button">Try!</button>
+    </p>
+
+    <p> Click the button to remove bored
+        <button onclick="removeBored()" id="bored_button">Try!</button>
+    </p>
+
+    <p> Click the button to remove list
+        <button onclick="removeList()" id="list_button">Try!</button>
+    </p>
+</p>
+    
+
+    
+
 
     <div class="main">
         <article id="Cook_at_home">
             <header class="cook_at_home_header">
-                <h2>Dlaczego warto gotować w domu?</h2>
-                    <img src="img/cooking_at_home.jpg" id = "r_img" alt="Cook happy" width="1000" height="800" onclick="randomImg()">
+                <h2 onclick="addBorder()">Dlaczego warto gotować w domu?</h2>
+                <img src="img/cooking_at_home.jpg" id="r_img" alt="Cook happy" width="1000" height="800"
+                    onclick="randomImg()">
             </header>
 
             <section class="index_main">

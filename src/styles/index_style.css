@@ -136,6 +136,74 @@ h1{
 }
 
 
+/* Text panel */
+
+.textPanel {
+    position: absolute;
+    top: 101vh; 
+    right: 230px; 
+    width: 35px;
+    background-color: #fff; 
+    height: 80px;
+    padding: 15px 5px 5px 5px; 
+    -webkit-box-shadow: 0 5px 15px 0 rgba(0,0,0,0.35);
+    -moz-box-shadow: 0 5px 15px 0 rgba(0,0,0,0.35);
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.35);
+    border-radius: 0 0 30px 30px;
+}
+ 
+
+.textPanel div {
+    font-size: 30px;
+}
+ 
+#t1 {
+    font-family: Times New Roman, Times, serif;
+}
+
+#t2 {
+    font-family: Kaushan Script, cursive;
+}
+
+
+/* Color panel */
+
+.colorPanel {
+    position: absolute;
+    top: 101vh; 
+    right: 30px; 
+    background-color: #fff; 
+    height: 60px;
+    padding: 15px 5px 5px 5px; 
+    -webkit-box-shadow: 0 5px 15px 0 rgba(0,0,0,0.35);
+    -moz-box-shadow: 0 5px 15px 0 rgba(0,0,0,0.35);
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.35);
+    border-radius: 0 0 30px 30px;
+}
+ 
+
+.colorPanel div {
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    float:left;
+    margin: 5px;   
+    border: 1px solid #c4bcbc; 
+}
+ 
+#blue{
+    background-color: #b3e5fc;
+}
+#pink{
+    background-color: #ffcdd2;
+}
+#white{
+    background-color: #ffffff;
+}
+
+
+
+
 /* Body */
 
 body{

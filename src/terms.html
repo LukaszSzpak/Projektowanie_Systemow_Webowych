@@ -20,6 +20,8 @@
             $("#footer").load("footer.html");
         });
     </script>
+    <script src="scripts/z4.js"></script>
+
 </head>
 
 <body>
@@ -28,8 +30,9 @@
 <div id="header"></div>
 
 <!-- page section -->
+    <p class="main">
 
-    <div class="main">
+        <!-- Our terms -->
         <p><h1>
             Regulamin naszego serwisu
         </h1>
@@ -46,6 +49,28 @@
                 me lius quod ii legunt saepius.
             </p>
         </div>
+
+        <!-- Information about you -->
+        <div id="infos">
+            <p>
+                <button id="info_button" onclick="whichKeyWithMouse(event)" style="font-size: 30px">Uzyskaj informacje</button>
+                <input type="text" id="key_field" onkeypress="whichKey(event)" onclick="cleanInput()" style="font-size: 30px" placeholder="Your key">
+            </p>
+
+        </div>
+
+        <!-- Click field -->
+        <div style="margin-top: 50px">
+            <p> Kliknij na polu aby sprawdzić pozycję myszy: </p>
+        </div>
+
+        <div id="field" class="test_field" onclick="showCords(event)">
+
+        </div>
+        <p id="cords"></p>
+
+
+        <!-- Opinion form -->
         <div class="form">
             <h1 class="title">
             Prześlij nam opinie !

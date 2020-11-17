@@ -59,3 +59,13 @@ input.button {
     padding: 1px;
 }
 
+/* test field */
+.test_field {
+    width: 500px;
+    min-width: 500px;
+    height: 500px;
+    min-height: 500px;
+    background-color: #E1E1E1;
+    margin-left: 30px;
+}
+

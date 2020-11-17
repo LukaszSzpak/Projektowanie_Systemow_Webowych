@@ -10,11 +10,13 @@
 
     <title>Strudel jabłkowy</title>
 
+    <script src="scripts/z2.js"></script>
     <script
             src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
     </script>
     <script src="scripts/subscription.js" defer></script>
+    <script src="scripts/z5.js" defer></script>
     <script>
         $(function(){
             $("#header").load("header.html");
@@ -41,7 +43,7 @@
                     <label>
                         <input type="email" class="sub_from" name="email" id="email" required autocomplete="email">
                     </label>
-                    <label class="sub_from_hint"> np. my@exmaple.com</label>
+                    <label class="sub_from_hint" id="sub_from_hint_email"></label>
                 </li>
             </ul>
             <ul class="sub_form">
@@ -50,7 +52,7 @@
                     <label>
                         <input type="text" class="sub_from" name="name" id="name" autofocus autocomplete="name">
                     </label>
-                    <label class="sub_from_hint"> np. Adam</label>
+                    <label class="sub_from_hint" id="sub_from_hint_name"></label>
                 </li>
             </ul>
             <ul class="sub_form">
@@ -59,7 +61,7 @@
                     <label>
                         <input type="text" class="sub_from" name="family-name" id="family-name" required autocomplete="family-name">
                     </label>
-                    <label class="sub_from_hint"> np. Kowalski</label>
+                    <label class="sub_from_hint" id="sub_from_hint_family_name"></label>
                 </li>
             </ul>
             <ul class="sub_form">
@@ -68,7 +70,7 @@
                     <label>
                         <input type="password" class="sub_from" name="new-password" id="new-password">
                     </label>
-                    <label class="sub_from_hint"> np. 123Kol.!</label>
+                    <label class="sub_from_hint" id="sub_from_hint_password"></label>
                 </li>
             </ul>
             <ul class="sub_form">
@@ -86,7 +88,7 @@
                         <input type="tel" class="sub_from" name="tel" id="tel" autocomplete="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
                                placeholder="123-456-789">
                     </label>
-                    <label class="sub_from_hint"> np. 123-456-789</label>
+                    <label class="sub_from_hint" id="sub_from_hint_tel"></label>
                 </li>
             </ul>
             <ul class="sub_form">
@@ -161,13 +163,17 @@
             </label>
 
         </form>
+
+        <button onclick="numberOfForm()">Number of form elem</button>
+        <button onclick="focusOnEmail()">Focus on email</button>
+        <button onclick="blurEmailField()">Blur email</button>
     </div>
 
     <div class="sub_right_photo"></div>
 
     <div class="sub_bottom">
         <div class="photo_cont">
-            <div> <img src="img/sub_1.jpg" alt="sub_photo_img" class="photo"> </div>
+            <div> <img src="img/sub_1.jpg" alt="sub_photo_img" class="photo" id="named_img" onclick="addBorder2()"> </div>
             <div> <img src="img/sub_2.jpg" alt="sub_photo_img" class="photo"> </div>
         </div>
     </div>
