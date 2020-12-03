@@ -36,7 +36,12 @@
         <h1 id="sub_join_us">
             Dołącz do nas już dziś !
         </h1>
-        <form id="subform" action="subscription_step.html" method="post" autocomplete="on">
+
+ 
+        <!-- HERE -->
+        <!-- 2 actions ?????????????-->
+        <!--<form id="subform" action="subscription_step.html" method="POST" autocomplete="on" action="php/subscription.php">-->
+        <form id="subform" autocomplete="on" action="php/subscription.php" method="POST" >
             <ul class="sub_form">
                 <li>
                     <label class="sub_form"> Twój email: </label>
@@ -124,13 +129,12 @@
                 <li>
                     <label class="sub_form"> Wykształcenie: </label>
                     <label>
-                        <input list="profession">
-                        <datalist id="profession">
-                            <option id="student" value="Student"></option>
-                            <option id="engineer" value="Inzynier"></option>
-                            <option id="master" value="Magister"></option>
-                            <option id="doctor" value="Doktor"></option>
-                        </datalist>
+                        <select name="profession">
+                            <option id="student" value="Student">Student</option>
+                            <option id="engineer" value="Inzynier">Inzynier</option>
+                            <option id="master" value="Magister">Magister</option>
+                            <option id="doctor" value="Doktor">Doktor</option>
+                        </select>
                     </label>
                 </li>
             </ul>
@@ -151,13 +155,14 @@
                         </a>
                     </label>
                     <label>
-                        <input type="checkbox" id="terms_checkbox" name="terms">
+                        <input type="checkbox" id="terms_checkbox" name="terms" value="1">
                     </label>
                 </li>
             </ul>
             <label class="sub_form_clear">
                 <input class="sub_form_clear" type="reset" value="Wyczyść !">
             </label>
+                <input type="hidden" name="form_submitted" value="1" />
             <label class="sub_form_next">
                 <input id="submit" class="sub_form_next" type="submit" value="Dalej !">
             </label>
