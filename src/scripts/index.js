@@ -73,7 +73,7 @@ function randomImg(delimg) {
 
 /* Spam */
 
-const timeID2 = setTimeout(spam, 3000);
+//const timeID2 = setTimeout(spam, 3000);
 
 function spam() {
     let i = 0;

@@ -1,0 +1,213 @@
+<?php
+session_start();
+if (!$_SESSION['user']){
+    header('Location: phpAccount/login.php');
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Olga Katsko, Lukasz Szpak">
+    <meta name="keywords" content="Cook, well, cooking, easy, healthy, zdrowe, odżywianie">    
+    <link rel="stylesheet" href="styles/recipe_desert_sztrudel_styles.css">
+    <?php include 'phpImports/stylesheets.php'; ?>
+
+    <title>Strudel jabłkowy</title>
+
+    <script src="scripts/z2.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+    </script>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+
+<body>
+
+<!-- header section -->
+    <div id="header"></div>
+
+<!-- page section -->
+<?php include 'phpAccount/showEmail.php'; ?>
+
+    <div class="introduction">
+        <h1>Sztrudel jabłkowy</h1>
+
+        <p class="img_change">
+            <img src="img/sztrudel2.jpg" alt="Sztrudel jabłkowy" class="main_img_first" width="700" height="400">
+            <img src="img/sztrudel1.jpg" alt="Sztrudel jabowy" class="main_img_second" width="700" height="400">
+        </p>
+
+        <p id="Level_of_difficulty">
+            POZIOM TRUDNOŚCI<br>
+            <meter value="2" max="5" low="1"></meter>
+        </p>
+
+        <pre>
+&#8222;Strudel jabłkowy to rolka zwinięta z cienkiego ciasta z nadzieniem i pieczona
+w piekarniku.Inną nazwą strudla jabłkowego jest wiedeński strudel, ponieważ
+jest to jeden z najpopularniejszych smakołyków w wiedeńskich kawiarniach.&#8221;</pre>
+    </div>
+
+
+
+    <section id="Navigation" class="navigation">
+        <ul>
+            <li><a href="#Nutrition_table" class="nav_link">Wartość odżywcza</a></li>
+            <li><a href="#Ingredients" class="nav_link">Wymagane składniki</a></li>
+            <li><a href="#Instruction" class="nav_link">Metoda gotowania</a></li>
+        </ul>
+    </section>
+
+
+
+    <section class="img_sl">
+        <ul class="accordion">
+            <li><img src="img/im_1.jpg" alt="sztrudel img"></li>
+            <li><img src="img/im_2.jpg" alt="sztrudel img"></li>
+            <li><img src="img/im_3.jpg" alt="sztrudel img"></li>
+            <li><img src="img/im_4.jpg" alt="sztrudel img"></li>
+            <li><img src="img/im_5.jpg" alt="sztrudel img"></li>
+        </ul>
+    </section>
+
+
+
+
+    <article id="Nutrition_table" class="table">
+        <table>
+            <caption>
+                <strong>Wartość odżywcza<br></strong>
+            </caption>
+
+
+            <tr>
+                <th colspan="3">Porcja: 1 kawałek (około 5 cm kwadratowych)</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>Na porcje</th>
+                <th>% RWS</th>
+            </tr>
+            <tr>
+                <th scope="row">Energia</th>
+                <th>175 kcal</th>
+                <th>9%</th>
+            </tr>
+            <tr>
+                <th scope="row">Węglowodany</th>
+                <th>26,3 g</th>
+                <th>10%</th>
+            </tr>
+            <tr>
+                <th scope="row">Cukier</th>
+                <th>16,48 g</th>
+                <th>18%</th>
+            </tr>
+            <tr>
+                <th scope="row">Błonnik</th>
+                <th>1,4 g</th>
+                <th></th>
+            </tr>
+            <tr>
+                <th scope="row">Białko</th>
+                <th>2,11 g</th>
+                <th>4%</th>
+            </tr>
+        </table>
+    </article>
+
+    <article id="Ingredients" class="ingredients">
+
+        <p><em>Sprawdz, czy masz wszystkie składniki pod ręką.</em></p>
+
+
+        <section>
+            <img src="img/sztrudel_ingredients.jpg" alt="Ingredients">
+            <h2>Wymagane składniki:</h2>
+            <ul>
+                <li>300 g mąki</li>
+                <li>1 jajko</li>
+                <li>Łyżka oleju roślinnego</li>
+                <li>Trochę soli</li>
+                <li>3 g soku z cytryny</li>
+                <li>100 g masła</li>
+                <li>Półtora kilograma jabłek słodkich i kwaśnych</li>
+                <li>75 g bułki tartej</li>
+                <li>80 g rodzynek i orzechów włoskich</li>
+                <li>2 łyżki cukru pudru</li>
+                <li>200 g cukru</li>
+                <li>Trochę cynamonu</li>
+            </ul>
+
+        </section>
+    </article>
+
+    <article id="Instruction" class="instruction">
+
+        <p><em>A teraz zaczynamy gotować strudel!</em></p>
+
+        <h2>Metoda gotowania:</h2>
+
+        <section>
+            <ol>
+                <li>Przesiać mąkę, wymieszać z niewielką ilością wody, soli i jajka.
+                    Uformuj kulkę, smaruj olejem roślinnym i włóż do lodówki na 30 minut.
+                </li>
+                <li>Na patelni z masłem lekko podsmażyć bułkę tartą.</li>
+                <li>Jabłka umyć, osuszyć, obrać i usunąć nasiona. Pokrój jabłka na małe kawałki.</li>
+                <li>Drobno posiekaj orzechy nożem.</li>
+                <li>Jabłka wymieszaj z orzechami, rodzynkami, cynamonem i cukrem.
+                    Aby jabłka nie ściemniały, muszą posypać sokiem z cytryny.
+                </li>
+                <li>Rozwałkuj ciasto na cienką warstwę i lekko rozciągnij.</li>
+                <li>Posypać ciasto bułką tartą i ułożyć nadzienie.
+                    <!--Change position of img-->
+                    <img src="img/sztrudel_instruction_7.jpg" alt="Krok 7" width="50" height="50"></li>
+                <li>Skręć mocno i puść olej.</li>
+                <li>Nałóż na blachę do pieczenia, posmaruj masłem i upiecz w piekarniku.<br>
+                    Po 40 minutach strudel będzie gotowy.
+                    <img src="img/sztrudel_instruction_9.jpg" alt="Krok 9" width="50" height="50">
+                </li>
+            </ol>
+
+        </section>
+    </article>
+
+    <article id="Download_file" class="download">
+        <p>Zapisz przepis, zostanie z tobą na zawsze !</p>
+        <div>
+            <em>Wybierz format pliku:</em>
+            <a href="documents/przepis_sztrudel_docx.docx" download="Sztrudel jabłkowy">dock</a>
+            <a href="documents/przepis_sztrudel_pdf.pdf" download="Sztrudel jabłkowy">pdf</a>
+        </div>
+    </article>
+
+    <article id="Subscription" class="bottom_sub_field">
+        <p>
+            Dołącz do nas i otrzymuj co tydzień nowe przepisy!<br>
+            Zarejestruj się <a href="subscription.php" target="_self"><img src="img/go_to_web_icon.jpg"
+                                                                           alt="Subscription" width="50" height="50"> </a>
+        </p>
+
+    </article>
+
+    <p>
+        <button onclick="numberOfA()">Get number of a</button>
+    </p>
+
+<!-- footer section -->
+    <div id="footer"></div>
+
+</body>
+
+</html>
